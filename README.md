@@ -10,7 +10,7 @@
 
 <p align="center">
 ¡Hola! somos el grupo 6 del TM de ITBA FullStack.
-Nuestro proyecto web es home banking. 
+Nuestro proyecto web es un home banking. 
 </p>
 
 <h3>Tecnologías:</h3>
