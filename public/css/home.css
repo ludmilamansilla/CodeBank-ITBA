@@ -1,0 +1,33 @@
+footer{
+    background-color: #09524e;
+}
+
+#logoFooter{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    position: relative; 
+    bottom: 130px;
+    left: 1100px;
+}
+
+a i{
+    color: #ffffff;
+    margin: 0px 10px 10px 10px;
+    
+}
+
+.itemFooter{
+    display: block;
+    margin: 8px;
+    padding: 2px;
+    
+}
+
+.enlacesPieDePagina{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: "Helvetica" , sans-serif;
+    font-size: 14px;
+    
+}
