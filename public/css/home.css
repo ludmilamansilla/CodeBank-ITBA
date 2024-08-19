@@ -211,6 +211,8 @@ header {
     background-color: #13318f;
     border-style: none;
     padding: 10px;
+    border: none;
+    outline: none;
 }
 
 .search-content button {
@@ -269,7 +271,7 @@ footer{
     flex-direction: column-reverse;
     display: inline-flex;
     margin: 4px;
-
+    text-decoration: none;
 }
 
 .redes-footer i{
