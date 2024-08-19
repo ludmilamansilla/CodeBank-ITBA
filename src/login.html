@@ -3,36 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
     <script src="https://kit.fontawesome.com/a1770bb305.js" crossorigin="anonymous"></script>
-    <title>Login</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/css/home.css">
+    <title>Bienvenido a CodeBank</title>
 </head>
 <body>
+
     <header>
-        <div class="container">
-            <div class="logo">
-                <img src="../public/images/logoCodeBank.png" alt="Logo">
+        <div class="container-header">
+            <div class="logo-header">
+                <a href="../src/home.html"><img src="../public/images/logoCodeBank.png" alt="Logo"></a>
                 <span class="logo-text">CodeBank</span>
             </div>
             <nav class="nav">
-                <a href="#">Personas</a>
-                <a href="#">Empresas</a>
-                <a href="#">Iniciar Banca</a>
+                <a href="../src/home.html" id="personas" class="active">Personas</a>
+                <a href="../src/empresas.html" id="empresas">Empresas</a>
+                <a href="../src/login.html">Iniciar Banca</a>
             </nav>
-            <div class="icons">
+            <div class="icons-header">
                 <button class="search-icon" aria-label="Buscar">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </button>
-                <button class="menu-icon" aria-label="Menú">
+                <button class="user-icon" aria-label="Iniciar sesión">
+                    <i class="fa-solid fa-user"></i>
+                </button>
+                <button class="menu-icon" aria-label="Menú" onclick="toggleMenu()">
                     <i class="fa-solid fa-bars"></i>
                     <span class="menu-text">Menú</span>
                 </button>
             </div>
         </div>
+
+        <!-- BUSQUEDA -->
+        <div class="search-popup" id="searchPopup">
+            <div class="search-content">
+                <span class="close-btn" id="closePopup">&times;</span>
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                <input type="text" placeholder="Buscar...">
+            </div>
+        </div>
+
+        <!-- MENÚ -->
+        <div class="menu-desplegable" id="dropdown-menu">
+            <a href="#">Tarjetas <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Cuentas <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Préstamos <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Inversiones <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Finanzas <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Seguros <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="#">Ayuda <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
+    
     </header>
-    
-    
+
+
     
 
 
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../public/js/script.js"></script>
 </body>
 </html>
