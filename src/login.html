@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="../public/css/home.css">
     <title>Bienvenido a CodeBank</title>
 </head>
+
 <body>
 
     <header>
@@ -55,12 +57,29 @@
             <a href="#">Seguros <i class="fa-solid fa-arrow-right"></i></a>
             <a href="#">Ayuda <i class="fa-solid fa-arrow-right"></i></a>
         </div>
-    
+
     </header>
+    <div class="login-container">
+        <h2>Bienvenido a CodeBank</h2>
+        <form id="formularioLogIn">
+            <div class="input-group">
+                <label for="nombre">Ingrese su nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+            </div>
+            <div class="input-group">
+                <label for="contrasena">Ingrese su contraseña</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+            </div>
+            <button class="button-inicio" type="submit">Iniciar sesión</button>
+        </form>
+        <br>
+        <div class="container-button">
+            <button class="button-link-text" type="button">
+                ¿Olvidó su Contraseña?
+            </button>
+        </div>
 
-
-    
-
+    </div>
 
 
 
@@ -74,5 +93,8 @@
 
 
     <script src="../public/js/script.js"></script>
+
+
 </body>
+
 </html>
