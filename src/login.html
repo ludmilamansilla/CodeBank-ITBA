@@ -8,6 +8,7 @@
     <script src="https://kit.fontawesome.com/a1770bb305.js" crossorigin="anonymous"></script>
     <!-- CSS -->
     <link rel="stylesheet" href="../public/css/home.css">
+    <link rel="stylesheet" href="../public/css/login.css">
     <title>Bienvenido a CodeBank</title>
 </head>
 
@@ -59,38 +60,44 @@
         </div>
 
     </header>
+
+    <div>
+        <img src="" alt="">
+    </div>
+    
     <div class="login-container">
         <h2>Bienvenido a CodeBank</h2>
-        <form id="formularioLogIn">
+        <form id="formularioLogIn"> 
+            
             <div class="input-group">
-                <label for="nombre">Ingrese su nombre</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Nombre completo" required>
+                <label for="nombre">DNI</label>
+                <input type="number" id="nombre" name="nombre" placeholder="Número de Documento" required>
             </div>
             <div class="input-group">
-                <label for="contrasena">Ingrese su contraseña</label>
-                <input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" required>
+                <label for="nombre">Usuario</label>
+                <input type="text" id="usuario" name="usuario" placeholder="Usuario completo" required>
             </div>
-            <button class="button-inicio" type="submit">Iniciar sesión</button>
+            <div class="input-group">
+                <label for="contrasena">Clave Digital</label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Clave Digital" required>
+            </div>
+            <button class="button-inicio" type="submit">Ingresar</button>
         </form>
         <br>
         <div class="container-button">
             <button class="button-link-text" type="button">
-                ¿Olvidó su Contraseña?
+                ¿Olvidaste o bloqueaste tu Usuario y/o Clave Digital?
+            </button>
+            <button class="button-link-text" type="button">
+                Si es la primera vez que ingresás a Banca Online, registrate.
             </button>
         </div>
 
     </div>
-
-
-
-
-
-
-
-
-
-
-
+    
+    <div class="segurity">
+        <p>🔒 No compartas tus datos personales o claves de acceso por email, teléfono, mensajes o redes sociales. Conocé nuestras recomendaciones de seguridad</p>
+    </div>
 
     <script src="../public/js/script.js"></script>
 
