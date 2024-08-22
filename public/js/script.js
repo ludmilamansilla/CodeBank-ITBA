@@ -10,7 +10,7 @@ function toggleMenu() {
 
 /* nav */
 document.addEventListener("DOMContentLoaded", function() {
-    const navLinks = document.querySelectorAll('.nav a');
+    const navLinks = document.querySelectorAll('.nav-header a');
     const currentPath = window.location.pathname.split('/').pop(); // Obtiene solo el nombre del archivo
 
     navLinks.forEach(link => {

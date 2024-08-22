@@ -1,0 +1,18 @@
+@import url(../css/home.css);
+@import url(../css/login.css);
+@import url(../css/prestamos.css);
+
+/* ESTILOS GENERALES */
+
+:root {
+    --azul: #071952;
+    --turquesa-oscuro: #088395;
+    --turquesa: #37B7C3;
+    --blanco: #EBF4F6;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
