@@ -2,7 +2,7 @@
 /* LOGIN */
 /* ----------------------------------------------------------------------- */
 
-.login-container {
+.login-container  {
     /* width: 100%; */
     max-width: 400px;
     margin: 50px auto; 
@@ -28,7 +28,7 @@
     text-align: left;
 }
 
-.login-container .input-group label {
+.login-container .input-group label{
     color: var(--azul);
     display: block;
     margin-bottom: 5px;
@@ -42,7 +42,7 @@
     background-color: #f0f0f0;
 }
 
-.button-inicio {
+.button-inicio , .button-prestamos {
     width: 100%;
     padding: 10px;
     background-color:  #071952;

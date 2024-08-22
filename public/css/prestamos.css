@@ -1,0 +1,57 @@
+.prestamos-simulador {
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: var(--blanco); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.prestamos-simulador h2 {
+    color: var(--azul); 
+    margin-bottom: 20px;
+}
+
+.prestamos-container {
+    width: 100%; 
+}
+
+.prestamos-container .input-group-prestamos {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.prestamos-container .input-group-prestamos label {
+    color: var(--azul); 
+    display: block;
+    margin-bottom: 5px;
+}
+
+.prestamos-container .input-group-prestamos input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--turquesa); 
+    border-radius: 5px;
+    background-color: #f0f0f0;
+}
+
+.button-prestamos {
+    width: 100%;
+    padding: 10px;
+    background-color: #071952; 
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button-prestamos:hover {
+    background-color: var(--turquesa);
+}
