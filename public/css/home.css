@@ -248,7 +248,7 @@ header {
 /* ----------------------------------------------------------------------- */
 
 .grid-conteiner{
-    display: grid;
+    display: grid; 
     grid-template-columns: repeat(8, 1fr);
     grid-gap: 10px;
     grid-auto-rows: minmax(100px, auto);
@@ -258,17 +258,17 @@ header {
     
 }
 
-.grid-conteiner h2{
+.grid-conteiner div h2{
     color: #ffffff;
     text-align: left;
-    font-size: 1.5em;
+    font-size: 100%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
-.grid-conteiner p{
+.grid-conteiner div p{
     color: #ffffff;
     margin: 1em;
     text-align: justify;
-    font-size: 1em;
+    font-size: 75%;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }
 .grid-conteiner div{
@@ -339,16 +339,16 @@ header {
     grid-row: 1 / 3; 
 }
 .prestamos img{
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
 }
 .comercios img{
     width: 15%;
     height: 20%;
 }
 .puntos img{
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20%;
 }
 .comercios{
     grid-column: 5 / 9;
@@ -357,6 +357,67 @@ header {
 .puntos{
     grid-column: 7 / 9;
     grid-row: 1 / 3; 
+}
+
+@media (max-width: 768px) {
+    .grid-conteiner{
+        grid-template-columns: repeat(1, 1fr);
+        grid-auto-rows: minmax(auto, auto);
+        background-color: #071952;
+        padding: 2em;
+        height: fit-content;
+    }
+
+    .emprendedores{
+        grid-column: 1;
+        grid-row: 1; 
+    }
+    
+    .emprendedores img{
+        margin-bottom: 1em;
+        width: 100%;
+        height: 50%;
+    }
+    .prestamos{
+        grid-column: 1;
+        grid-row: 2; 
+    }
+    .prestamos img{
+        width: 15%;
+        height: 30%;
+    }
+    .comercios img{
+        width: 15%;
+        height: 20%;
+    }
+    .puntos img{
+        width: 15%;
+        height: 30%;
+    }
+    .comercios{
+        grid-column: 1;
+        grid-row: 3; 
+    }
+    .puntos{
+        grid-column: 1;
+        grid-row: 4; 
+    }
+    
+        
+    .grid-conteiner div h2{
+        color: #ffffff;
+        text-align: left;
+        font-size: 100%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+    .grid-conteiner div p{
+        color: #ffffff;
+        margin: 1em;
+        text-align: justify;
+        font-size: 90%;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    }
+
 }
 
 
