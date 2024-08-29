@@ -18,6 +18,11 @@
 
     --color-scroll:rgb(192,192,192);
     --color-scroll-hover:rgb(134,134,134);
+
+    --azul: #071952;
+    --turquesa-oscuro: #088395;
+    --turquesa: #37B7C3;
+    --blanco: #EBF4F6;
 }
 
 .dark-mode{
@@ -52,6 +57,12 @@ body{
     height: 100vh;
     width: 100%;
 }
+
+ol, ul {
+    padding-left: 0;
+    margin: 0; 
+}
+
 
 /*-----------------Menu*/
 .menu{
@@ -300,7 +311,6 @@ main.min-main{
     }
     main{
         margin-left: 0;
-        margin-top: 31px;
     }
     main.min-main{
         margin-left: 0;
@@ -340,4 +350,16 @@ main.min-main{
   justify-content: flex-end;
   padding: 10px;
   background-color: var(--color-barra-lateral);
+}
+
+/* button home */
+
+.volver-home {
+    padding: 15px 20px 15px 20px;
+    background-color: #1973B8;
+    color: white;
+    border: none;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }

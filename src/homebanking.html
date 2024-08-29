@@ -15,100 +15,112 @@
 
 <body>
 
-    <div class="menu">
-        <ion-icon name="menu-outline"></ion-icon>
-        <ion-icon name="close-outline"></ion-icon>
-    </div>
-
-
-
-    <div class="barra-lateral">
-        <div>
-            <div class="nombre-pagina">
-                <img src="../public/images/logoCodeBank.png" alt="" style="width: 60px;" id="codebank">
-                <span>CodeBank</span>
-            </div>
+    <header>
+        <div class="menu">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
         </div>
-
-        <nav class="navegacion">
-            <ul>
-                <li>
-                    <a id="inbox" href="#">
-                        <ion-icon name="home-outline"></ion-icon>
-                        <span>Inicio</span>
-                    </a>
-                </li>
-                <li>
-                    <a id="#" href="#">
-                        <ion-icon name="cash-outline"></ion-icon>
-                        <span>Transferencias</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="card-outline"></ion-icon>
-                        <span>Pagar Facturas</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="wallet-outline"></ion-icon>
-                        <span>Solicitar Préstamo</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <ion-icon name="analytics-outline"></ion-icon>
-                        <span>Movimientos</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <div class="search-icon">
-                            <ion-icon name="search-outline"></ion-icon>
-                        </div>
-                        <input type="text" class="search-bar" placeholder="Buscar...">
-                    </a>
-                </li>
-            </ul>
-
-        </nav>
-
-
-
-        <div>
-
-            <div class="linea"></div>
-
-            <div class="modo-oscuro">
-                <div class="info">
-                    <ion-icon name="moon-outline"></ion-icon>
-                    <span>Drak Mode</span>
+    
+        <div class="barra-lateral">
+            <div>
+                <div class="nombre-pagina">
+                    <img src="../public/images/logoCodeBank.png" alt="" style="width: 60px;" id="codebank">
+                    <span>CodeBank</span>
                 </div>
-                <div class="switch">
-                    <div class="base">
-                        <div class="circulo">
-
+            </div>
+    
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a id="inbox" href="#">
+                            <ion-icon name="home-outline"></ion-icon>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="#" href="#">
+                            <ion-icon name="cash-outline"></ion-icon>
+                            <span>Transferencias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/src/conversionMoneda.html">
+                            <ion-icon name="card-outline"></ion-icon>
+                            <span>Coversiones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/src/prestamos.html">
+                            <ion-icon name="wallet-outline"></ion-icon>
+                            <span>Solicitar Préstamo</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                            <span>Movimientos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="search-icon">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                            <input type="text" class="search-bar" placeholder="Buscar...">
+                        </a>
+                    </li>
+                </ul>
+    
+            </nav>
+    
+    
+    
+            <div>
+    
+                <div class="linea"></div>
+    
+                <div class="modo-oscuro">
+                    <div class="info">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span>Drak Mode</span>
+                    </div>
+                    <div class="switch">
+                        <div class="base">
+                            <div class="circulo">
+    
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-
-            <div class="usuario">
-                <img src="../public/images/logoCodeBank.png" alt="">
-                <div class="info-usuario">
-                    <div class="nombre-email">
-                        <span class="nombre">CodeBank</span>
-                        <span class="email">codebank@mail.com</span>
+    
+                <div class="usuario">
+                    <img src="../public/images/logoCodeBank.png" alt="">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">CodeBank</span>
+                            <span class="email">codebank@mail.com</span>
+                        </div>
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                     </div>
-                    <ion-icon name="ellipsis-vertical-outline"></ion-icon>
                 </div>
             </div>
+    
         </div>
+    </header>
 
-    </div>
-
-
+    <main>
+        <h1>Pagina de inicio HomeBanking de CodeBank</h1>
+        <br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, repellat ratione culpa et maxime, praesentium mollitia tenetur fugiat deleniti neque veritatis molestiae ullam nihil cum magni libero sed odit expedita?</p>
+        <br>
+        <p>Navega por el menú desplegable para más opciones</p>
+        <br>
+        <p>En este homebanking solo pueden ingresar los usuarios con cuenta de CodeBank</p>
+        <br>
+        <hr>
+        <br>
+        <a href="/src/home.html"><button class="volver-home">Volver al home</button></a>
+    </main>
 
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
