@@ -45,3 +45,33 @@ window.addEventListener('click', function (event) {
         document.getElementById('searchPopup').style.display = 'none';
     }
 });
+
+/* CAROUSEL */
+
+document.addEventListener('DOMContentLoaded', () => {
+    const thumbnails = document.querySelectorAll('.carousel2-thumbnail');
+    const items = document.querySelectorAll('.carousel2-main .carousel2-item');
+
+    thumbnails.forEach(thumbnail => {
+        thumbnail.addEventListener('click', () => {
+            const index = thumbnail.getAttribute('data-index');
+
+            // Remove active class from all thumbnails
+            thumbnails.forEach(img => img.classList.remove('active'));
+            
+            // Add active class to the clicked thumbnail
+            thumbnail.classList.add('active');
+
+            // Scroll to the selected item
+            items.forEach((item, i) => {
+                if (i == index) {
+                    item.scrollIntoView({ behavior: 'smooth', inline: 'center' });
+                }
+            });
+        });
+    });
+
+    // Set the first thumbnail and item as active initially
+    thumbnails[0].classList.add('active');
+    items[0].scrollIntoView({ behavior: 'smooth', inline: 'center' });
+});
