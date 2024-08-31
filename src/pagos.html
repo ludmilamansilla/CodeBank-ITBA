@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/a1770bb305.js" crossorigin="anonymous"></script>
+    <!-- BOOSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../public/css/pagos.css">
+    <link rel="stylesheet" href="../public/css/homebanking.css">
+    <!-- FAVICON -->
+    <link rel="icon" href="../public/images/logoCodeBank.png" type="image/x-icon">
+    <title>Pago de Facturas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<header>
+        
+    <header>
+        <div class="menu">
+            <ion-icon name="menu-outline"></ion-icon>
+            <ion-icon name="close-outline"></ion-icon>
+        </div>
+    
+        <div class="barra-lateral">
+            <div>
+                <div class="nombre-pagina">
+                    <img src="../public/images/logoCodeBank.png" alt="" style="width: 60px;" id="codebank">
+                    <span>CodeBank</span>
+                </div>
+            </div>
+    
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a id="#" href="/src/homebanking.html">
+                            <ion-icon name="home-outline"></ion-icon>
+                            <span>Inicio</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="#" href="#">
+                            <ion-icon name="cash-outline"></ion-icon>
+                            <span>Transferencias</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="#" href="/src/conversionMoneda.html">
+                            <ion-icon name="card-outline"></ion-icon>
+                            <span>Coversiones</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a id="#" href="/src/prestamos.html">
+                            <ion-icon name="wallet-outline"></ion-icon>
+                            <span>Prestamos</span>
+                        </a>
+                    </li>
+              <!-- agregar -->  
+                    <li>
+                        <a id="#" href="/src/pagos.html">
+                            <ion-icon name="bill-payment"></ion-icon>
+                            <span>Pago de Facturas</span>
+                        </a
+                    </li>
+                <!-- agregar -->  
+                    <li>
+                        <a href="#">
+                            <ion-icon name="analytics-outline"></ion-icon>
+                            <span>Movimientos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="search-icon">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </div>
+                            <input type="text" class="search-bar" placeholder="Buscar...">
+                        </a>
+                    </li>
+                </ul>
+    
+            </nav>
+    
+    
+    
+            <div>
+    
+                <div class="linea"></div>
+    
+                <div class="modo-oscuro">
+                    <div class="info">
+                        <ion-icon name="moon-outline"></ion-icon>
+                        <span>Drak Mode</span>
+                    </div>
+                    <div class="switch">
+                        <div class="base">
+                            <div class="circulo">
+    
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="usuario">
+                    <img src="../public/images/logoCodeBank.png" alt="">
+                    <div class="info-usuario">
+                        <div class="nombre-email">
+                            <span class="nombre">CodeBank</span>
+                            <span class="email">codebank@mail.com</span>
+                        </div>
+                        <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+
+    </header>
+
+</header>
+<main>
+    <div class="pagos-simulador">
+        <h2>Pagá tus facturas</h2>
+        <div class="pago-container">
+            <form id="empresafactura"></form>
+                <div class="input-group-pagos">
+                    <label for="empresa">Empresa de la factura que desea pagar</label>
+                    <input  type="text" id="empresa" name="empresa" >
+                </div>
+                <div class="input-group-pagos">
+                    <label for="valor">Valor de la factura que desea pagar</label>
+                    <input  type="number" id="valor" name="valor">
+                </div>
+ 
+                <div class="input-group-pagos">
+                    <label for="medio">Medio de pago</label>
+                    <input  type="text" id="medio" name="medio">
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</main>
+<body>
+    
+</body>
+</html>
