@@ -1,0 +1,50 @@
+
+.pagos-simulador {
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 20px;
+    background-color: var(--blanco); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+        color: var(--azul); 
+        margin-bottom: 20px;
+}
+
+.input-group-pagos{
+    margin-bottom: 15px;
+    text-align: left;
+}
+.pagos-container {
+    width: 100%; 
+}
+input-group-pagos label {
+    color: var(--azul); 
+    display: block;
+    margin-bottom: 5px;
+}
+.input-group-pagos input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--turquesa); 
+    border-radius: 5px;
+    background-color: #f0f0f0
+}
+.button-pagos {
+    width: 100%;
+    padding: 10px;
+    background-color: #071952; 
+    color: var(--blanco);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-pagos:hover {
+    background-color: var(--turquesa);
+}
