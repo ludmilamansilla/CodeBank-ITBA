@@ -18,7 +18,7 @@
     <title>Document</title>
 </head>
 
-<header>
+<body>
         
     <header>
         <div class="menu">
@@ -42,38 +42,42 @@
                             <span>Inicio</span>
                         </a>
                     </li>
+                    
                     <li>
                         <a id="#" href="#">
                             <ion-icon name="cash-outline"></ion-icon>
                             <span>Transferencias</span>
                         </a>
                     </li>
+                    
                     <li>
                         <a id="#" href="../src/conversionMoneda.html">
                             <ion-icon name="card-outline"></ion-icon>
                             <span>Coversiones</span>
                         </a>
                     </li>
+                    
                     <li>
                         <a id="#" href="../src/prestamos.html">
                             <ion-icon name="wallet-outline"></ion-icon>
-                            <span>Prestamos</span>
+                            <span>Solicitar Préstamos</span>
                         </a>
-                    </li>
-              <!-- agregar -->  
+                    </li> 
+                    
                     <li>
-                        <a id="#" href="../src/pagos.html">
-                            <ion-icon name="bill-payment"></ion-icon>
+                        <a id="inbox" href="../src/pagos.html">
+                            <ion-icon name="receipt-outline"></ion-icon>
                             <span>Pago de Facturas</span>
                         </a
                     </li>
-                <!-- agregar -->  
+                   
                     <li>
                         <a href="#">
                             <ion-icon name="analytics-outline"></ion-icon>
                             <span>Movimientos</span>
                         </a>
                     </li>
+                    
                     <li>
                         <a href="#">
                             <div class="search-icon">
@@ -82,6 +86,7 @@
                             <input type="text" class="search-bar" placeholder="Buscar...">
                         </a>
                     </li>
+                
                 </ul>
     
             </nav>
@@ -122,7 +127,6 @@
 
     </header>
 
-</header>
 <main>
     <div class="pagos-simulador">
         <h2>Pagá tus facturas</h2>
@@ -146,7 +150,10 @@
     </div>
     
 </main>
-<body>
     
+    <script src="../public/js/script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="../public/js/homebanking.js"></script>
 </body>
 </html>
