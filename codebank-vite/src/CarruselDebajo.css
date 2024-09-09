@@ -1,0 +1,16 @@
+
+
+img{
+    width: 10%;
+    height: 10%;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    color: #050241;
+    width: 100%;
+}

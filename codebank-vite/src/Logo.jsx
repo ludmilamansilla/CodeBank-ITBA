@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 function Logo({ logo }) { 
   return (
     <div className="logo">
-     <Link to="/"><img src={logo} alt="logo" /></Link> 
+     <Link to="/home"><img src='../public/images/logoCodeBank.png' alt="logo" /></Link> 
      <span className="logo-text">CodeBank</span>
     </div>
   );
