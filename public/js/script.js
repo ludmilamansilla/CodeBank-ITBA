@@ -75,3 +75,5 @@ document.addEventListener('DOMContentLoaded', () => {
     thumbnails[0].classList.add('active');
     items[0].scrollIntoView({ behavior: 'smooth', inline: 'center' });
 });
+
+export default toggleMenu;

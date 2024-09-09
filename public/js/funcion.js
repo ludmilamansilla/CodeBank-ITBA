@@ -28,3 +28,5 @@ function mover(id) {
 
     foto.addEventListener('mouseout', handleMouseOut);
 }
+
+export default mover;
