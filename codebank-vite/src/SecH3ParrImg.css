@@ -1,0 +1,33 @@
+
+
+.SecH3ParrImg{
+    background-color: #071952;
+    display: flex;
+    color: white;
+    padding-left: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.SecH3ParrImg img{
+    width: 100%;
+}
+
+.SecH3ParrImg div{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.SecH3ParrImg div button {
+    background-color: #1973B8;
+    color: white;
+    border: none;
+    
+}
+.SecH3ParrImg div button:hover {
+    background-color: #1464A5;
+}

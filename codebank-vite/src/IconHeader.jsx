@@ -15,7 +15,7 @@ export default IconHeader;*/
 
 function IconHeader({icon, label, iClass}) {
     return (
-       <button className={icon} aria-label={label}>,
+       <button className={icon} aria-label={label}>
            <i className={iClass}></i>
            {icon === "menu.icon" ? <span className="menu-text">Menu</span> : ""}
        </button>

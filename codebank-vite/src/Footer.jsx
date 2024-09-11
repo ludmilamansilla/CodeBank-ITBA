@@ -1,6 +1,7 @@
 import Logo from "./Logo";
 import { Link } from 'react-router-dom';
 import BarraNav from "./BarraNav";
+import './Footer.css';
 
 
 function Footer() {

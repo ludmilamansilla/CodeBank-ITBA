@@ -1,11 +1,14 @@
-
+import './CarruselDebajo.css';
 
 function CarruselDebajo(props) {
   return (
-    <div className="articulo-carousel2">
-            <img src={props.img} alt={props.alt}/>
-            <p>{props.descripcion}</p>
-    </div>
+    <section>
+      {props.items.map((item) =>  
+              <div className="articulo-carousel2">
+              <img src={item.img} alt={item.alt}/>
+              <p>{item.descripcion}</p>
+              </div>)}
+    </section>
   );
 }
 
