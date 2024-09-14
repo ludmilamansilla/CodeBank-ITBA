@@ -13,19 +13,9 @@
     margin: 15px 0; 
   }
   
-  input, select {
-    padding: 10px;
-    width: calc(100% - 20px); 
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-  }
-  
-  button {
-    background-color: #130feb;
-    color: rgb(10, 33, 238);
+  .boton {
+    background-color: #11034e;
+    color: rgb(255, 255, 255);
     padding: 12px 20px;
     border: none;
     border-radius: 5px;
@@ -33,35 +23,35 @@
     font-size: 1rem;
   }
   
-  button:hover {
+  .boton:hover {
     background-color:  turquoise;
   }
   
-  h3 {
+  .titulo {
     margin-top: 20px;
     font-size: 1.2rem;
     color: #fffbfb;
+    color: rgb(16, 6, 71);
   }
   
  
-  select {
+  .menu {
     padding: 10px;
     width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 1rem;
     appearance: none; 
-    background: #fff 
+    background: #11034e;
   
   }
   
-  select:focus {
+  .menu:focus {
     border-color: #11034e;
     outline: none;
   }
-  h3 {
-    color: rgb(16, 6, 71);
-  }
+
   .form-group > label {  
     color: black; 
+    font-size: 1rem;
   }
