@@ -9,7 +9,7 @@ import './Header.css';
 
 
 
-function Header() {
+function Header({items}) {
   const [showPopup, setShowPopup] = useState(false);
 
   const handleOpenPopup = () => {
@@ -24,13 +24,7 @@ function Header() {
     <header>
       <Logo logo="" />
       <BarraNav
-        items={[
-          { txt: "Home", lnk: "/" },
-          { txt: "Iniciar sesion", lnk: "#", onClick: handleOpenPopup, isButton: true },
-          { txt: "Tarjetas", lnk: "/" },
-          { txt: "Inversiones", lnk: "/" },
-          { txt: "Ayuda", lnk: "/" }
-        ]}
+        items={items} accion={handleOpenPopup}
       />
       <div>
         <IconHeader iClass={"fa-solid fa-magnifying-glass"} />

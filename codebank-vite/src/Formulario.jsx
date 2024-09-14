@@ -31,6 +31,7 @@ function Formulario({ closePopup }) {
       console.log('Username:', username);
       console.log('Password:', password);
       closePopup();
+
     }
   };
 
