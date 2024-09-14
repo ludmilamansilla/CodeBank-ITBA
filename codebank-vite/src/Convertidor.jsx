@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import './Convertidor.css';
-import axios from 'axios';
 
 function Converter() {
   const [currencies, setCurrencies] = useState([]);
@@ -9,23 +8,30 @@ function Converter() {
   const [amount, setAmount] = useState(1);
   const [conversionResult, setConversionResult] = useState(null);
   const API_KEY = '3f9ea4845c9d4c4f5540323c';
-  const BASE_URL = `https://v6.exchangerate-api.com/v6/${API_KEY}`;
+  const BASE_URL = 'https://v6.exchangerate-api.com/v6/' + API_KEY;
 
   useEffect(() => {
-    axios.get(`${BASE_URL}/latest/USD`)
-      .then(response => {
-        const currencyCodes = Object.keys(response.data.conversion_rates);
-        setCurrencies(currencyCodes);
-      })
-      .catch(error => console.error('Error fetching data:', error));
+
+    async function fetchData() {
+    let response = await fetch(BASE_URL+'/latest/USD')
+
+    let data = await response.json();
+
+    setCurrencies(Object.keys(data.conversion_rates))
+    }
+    fetchData();
+
   }, []);
 
   const handleConvert = () => {
-    axios.get(`${BASE_URL}/pair/${fromCurrency}/${toCurrency}/${amount}`)
-      .then(response => {
-        setConversionResult(response.data.conversion_result);
-      })
-      .catch(error => console.error('Error during conversion:', error));
+    async function fetchData() {
+      let response = await fetch(BASE_URL+'/pair/'+fromCurrency+'/'+toCurrency+'/'+amount)
+  
+      let data = await response.json();
+  
+      setConversionResult(data.conversion_result)
+      }
+      fetchData();
   };
 
   return (
@@ -34,7 +40,7 @@ function Converter() {
 
       <div className="form-group">
         <label>Ingrese el monto:</label>
-        <input
+        <input className='menu'
           type="number"
           value={amount}
           onChange={(e) => setAmount(e.target.value)}
@@ -43,7 +49,7 @@ function Converter() {
 
       <div className="form-group">
         <label>Seleccione moneda a convertir:</label>
-        <select
+        <select className='menu'
           value={fromCurrency}
           onChange={(e) => setFromCurrency(e.target.value)}
         >
@@ -58,7 +64,7 @@ function Converter() {
 
       <div className="form-group">
         <label>A:</label>
-        <select
+        <select className='menu'
           value={toCurrency}
           onChange={(e) => setToCurrency(e.target.value)}
         >
@@ -70,10 +76,10 @@ function Converter() {
         </select>
       </div>
 
-      <button onClick={handleConvert}>Convertir</button>
+      <button className='boton' onClick={handleConvert}>Convertir</button>
 
       {conversionResult && (
-        <h3>{`${amount} ${fromCurrency} = ${conversionResult} ${toCurrency}`}</h3>
+        <h3 className='titulo'>{`${amount} ${fromCurrency} = ${conversionResult} ${toCurrency}`}</h3>
       )}
     </div>
 
