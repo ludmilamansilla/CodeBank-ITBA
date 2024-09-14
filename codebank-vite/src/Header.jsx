@@ -5,9 +5,6 @@ import IconHeader from "./IconHeader";
 import Logo from "./Logo";
 import Formulario from './Formulario';
 import './Header.css';
-//Falta agregar menu hamburguesa
-
-
 
 function Header() {
   const [showPopup, setShowPopup] = useState(false);
@@ -28,7 +25,7 @@ function Header() {
           { txt: "Home", lnk: "/" },
           { txt: "Iniciar sesion", lnk: "#", onClick: handleOpenPopup, isButton: true },
           { txt: "Tarjetas", lnk: "/" },
-          { txt: "Inversiones", lnk: "/" },
+          { txt: "Conversiones", lnk: "/convertidor" }, 
           { txt: "Ayuda", lnk: "/" }
         ]}
       />

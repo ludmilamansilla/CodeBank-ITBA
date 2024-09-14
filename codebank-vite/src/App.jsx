@@ -9,6 +9,7 @@ import Panel from './Panel'
 import CarruselDebajo from './CarruselDebajo'
 import Logo from './Logo'
 import Formulario from './Formulario'
+import Converter from './Convertidor'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
@@ -48,7 +49,9 @@ function App() {
         />
         <Routes>
           <Route path="/formulario" element={<Formulario />} />
+          <Route path="/convertidor" element={<Converter />} />
         </Routes>
+
         <SecH3ParrImg heading="Depositá tu sueldo en CodeBank y usá los grandes beneficios" img="../public\images\zenus-bank-women-helping-man.webp" alt="" paragraph="Si traés tu sueldo a CodeBank, te regalamos hasta $300.000 en tu tarjeta . Además, vas a tener tu cuenta bonificada y accedés a ahorros exclusivos de hasta 30%." button="Conocé más" />
 
         <div className='paneles'>
