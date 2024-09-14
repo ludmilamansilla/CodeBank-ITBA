@@ -8,6 +8,7 @@ import SecH3ParrImg from './SecH3ParrImg'
 import Panel from './Panel'
 import CarruselDebajo from './CarruselDebajo'
 import Logo from './Logo'
+import Carrousel from './Carrousel'
 import Formulario from './Formulario'
 import Converter from './Convertidor'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -17,8 +18,14 @@ function App() {
   return (
     <>
       <Router>
-        <Header />
-
+        <Header items={[
+          { txt: "Home", lnk: "/" },
+          { txt: "Iniciar sesion", lnk: "#", isButton: true },
+          { txt: "Tarjetas", lnk: "/" },
+          { txt: "Inversiones", lnk: "/" },
+          { txt: "Ayuda", lnk: "/" }
+        ]}/>
+        <Carrousel images={['../public/images/carousel/1.png','../public/images/carousel/2.png']}/>
         <CarruselDebajo items={[
           {
             img: "https://www.bbva.com.ar/content/dam/public-web/global/images/icons/1_007_creditcard.svg",
