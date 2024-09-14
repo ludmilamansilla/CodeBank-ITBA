@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import Logo from "./Logo";
 import './Formulario.css';
+import Logo from "./Logo";
+
+
 
 function Formulario({ closePopup }) {
   const [username, setUsername] = useState('');
