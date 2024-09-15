@@ -18,7 +18,7 @@ function Header({items}) {
   };
 
   return (
-    <header>
+    <header className='header'>
       <Logo logo="" />
       <BarraNav
         items={items} accion={handleOpenPopup}

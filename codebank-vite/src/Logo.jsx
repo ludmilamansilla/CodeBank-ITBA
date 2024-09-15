@@ -1,9 +1,9 @@
 import { Link } from 'react-router-dom';
 
-function Logo({ logo }) { 
+function Logo() { 
   return (
     <div className="logo">
-     <Link to="/home"><img src='../public/images/logoCodeBank.png' alt="logo" /></Link> 
+     <Link to="/"><img src='../public/images/logoCodeBank.png' alt="logo" /></Link> 
      <span className="logo-text">CodeBank</span>
     </div>
   );
