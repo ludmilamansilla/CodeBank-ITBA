@@ -1,4 +1,4 @@
-header {
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8,45 +8,45 @@ header {
     width: 100%;
 }
 
-header img {
+.header img {
     width: 50px;
     height: 50px;
 }
 
-header ul {
+.header ul {
     display: flex;
     list-style: none;
 
 }
 
-header ul li {
+.header ul li {
     margin-right: 20px;
 
 }
 
-header ul li a {
+.header ul li a {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
     border-radius: 5px;
 }
 
-header ul li a:hover {
+.header ul li a:hover {
     color: #333;
     background-color: turquoise;
     border-bottom: 3px solid #ffffff;
     ;
 }
 
-header ul li button i {
+.header ul li button i {
     color: #333;
     background-color: turquoise;
     border-bottom: 3px solid #ffffff;
     ;
 }
 
-header ul li a,
-header ul li button {
+.header ul li a,
+.header ul li button {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
@@ -56,15 +56,15 @@ header ul li button {
     cursor: pointer;
 }
 
-header ul li a:hover,
-header ul li button:hover {
+.header ul li a:hover,
+.header ul li button:hover {
     color: #333;
     background-color: turquoise;
     border-bottom: 3px solid #ffffff;
 }
 
-header ul li a,
-header ul li button {
+.header ul li a,
+.header ul li button {
     text-decoration: none;
     color: white;
     padding: 5px 10px;
@@ -77,14 +77,14 @@ header ul li button {
     line-height: 1.5;
 }
 
-header ul li a:hover,
-header ul li button:hover {
+.header ul li a:hover,
+.header ul li button:hover {
     color: #333;
     background-color: turquoise;
     border-bottom: 3px solid #ffffff;
 }
 
-header ul {
+.header ul {
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -93,7 +93,7 @@ header ul {
     margin: 0;
 }
 
-header ul li {
+.header ul li {
     display: flex;
     align-items: center;
 }

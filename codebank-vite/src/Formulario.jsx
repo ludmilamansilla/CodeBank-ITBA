@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 import './Formulario.css';
 import Logo from "./Logo";
+import { useNavigate } from 'react-router-dom';
+
+
 
 
 
@@ -8,6 +11,8 @@ function Formulario({ closePopup }) {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+
+  const navigate = useNavigate();
 
   const validateForm = () => {
     if (password.length < 8) {
@@ -27,19 +32,19 @@ function Formulario({ closePopup }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    
 
-    if (validateForm()) {
-
+    if (validateForm()) {    
       console.log('Username:', username);
       console.log('Password:', password);
       closePopup();
-
+      navigate('/homebanking');
     }
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Iniciar Sesión en <Logo logo="" /></h2>
+    <form onSubmit={handleSubmit} > 
+      <h2>Iniciar Sesión en <Logo/></h2>
       <div>
         <label>Nombre de Usuario:</label>
         <input
