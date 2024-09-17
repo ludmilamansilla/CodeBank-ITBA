@@ -1,57 +1,102 @@
 .converter-container {
-    margin: 50px auto; 
-    padding: 20px;
-    text-align: center;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    background-color: #ffffff; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); 
-    left: 50%;
-  }
-  
-  .form-group {
-    margin: 15px 0; 
-  }
-  
-  .boton {
-    background-color: #11034e;
-    color: rgb(255, 255, 255);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-  }
-  
-  .boton:hover {
-    background-color:  turquoise;
-  }
-  
-  .titulo {
-    margin-top: 20px;
-    font-size: 1.2rem;
-    color: #fffbfb;
-    color: rgb(16, 6, 71);
-  }
-  
- 
-  .menu {
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  left: 50%;
+}
+
+.form-group {
+  margin: 15px 0;
+}
+
+.boton {
+  background-color: #11034e;
+  color: rgb(255, 255, 255);
+  padding: 12px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin: 10px 0;
+  transition: ease-in-out 0.5s;
+}
+
+.boton:hover {
+  background-color: turquoise;
+}
+
+.titulo {
+  margin-top: 20px;
+  font-size: 1.2rem;
+  color: #fffbfb;
+  color: rgb(16, 6, 71);
+}
+
+.menu {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  appearance: none;
+  background: #11034e;
+}
+
+.menu :last-child{
+  margin: 1em;
+}
+
+.menu:focus {
+  border-color: #11034e;
+  outline: none;
+}
+
+.form-group > label {
+  color: black;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .converter-container {
+    margin: 20px auto;
     padding: 10px;
-    width: 100%;
-    border: 1px solid #ccc;
     border-radius: 5px;
-    font-size: 1rem;
-    appearance: none; 
-    background: #11034e;
-  
-  }
-  
-  .menu:focus {
-    border-color: #11034e;
-    outline: none;
   }
 
-  .form-group > label {  
-    color: black; 
+  .titulo {
     font-size: 1rem;
   }
+
+  .boton {
+    padding: 8px 16px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .converter-container {
+    margin: 10px auto;
+    padding: 5px;
+    border-radius: 3px;
+  }
+
+  .titulo {
+    font-size: 0.8rem;
+  }
+
+  .boton {
+    padding: 6px 12px;
+    font-size: 0.7rem;
+  }
+
+
+  
+}
+

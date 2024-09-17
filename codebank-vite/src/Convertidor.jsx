@@ -37,6 +37,7 @@ function Converter() {
   return (
     <div className="converter-container">
       <h2>Convierte tu saldo</h2>
+      <hr />
 
       <div className="form-group">
         <label>Ingrese el monto:</label>
@@ -78,8 +79,9 @@ function Converter() {
 
       <button className='boton' onClick={handleConvert}>Convertir</button>
 
-      {conversionResult && (
-        <h3 className='titulo'>{`${amount} ${fromCurrency} = ${conversionResult} ${toCurrency}`}</h3>
+      {conversionResult && (<>
+        <hr />
+        <h3 className='titulo'>{`${amount} ${fromCurrency} = ${conversionResult} ${toCurrency}`}</h3></>
       )}
     </div>
 

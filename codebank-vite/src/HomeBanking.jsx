@@ -16,7 +16,7 @@ function HomeBanking() {
         <br/>
         <hr/>
         <br/>
-        <Link to='/'><button class="volver-home">Volver al home</button></Link>
+        <Link to='/'><button className="volver-home">Volver al home</button></Link>
     </div> );
 }
 
