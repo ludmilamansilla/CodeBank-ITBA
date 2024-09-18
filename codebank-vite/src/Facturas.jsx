@@ -8,14 +8,25 @@ function Facturas() {
     const [monto, setMonto] = useState('');
     const [motivo, setMotivo] = useState('');
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        if (factura && monto) {
+            setPrestamoResult(true);
+        } else {
+            alert("Por favor, complete todos los campos obligatorios.");
+        }
+    };
+
+
+
+
+
     return (
         <div className="converter-container">
             <h2>Pago de Facturas</h2>
             <hr />
 
-            <form className="form-group" onSubmit={(e) => {e.preventDefault()
-            setPrestamoResult(true)
-            } }>
+            <form className="form-group" onSubmit={(e) => {handleSubmit(e);} }>
             <label>Ingrese el Nro de Factura:</label>
             <input
             className="menu"

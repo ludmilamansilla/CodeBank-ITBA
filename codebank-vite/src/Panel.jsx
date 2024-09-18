@@ -1,17 +1,5 @@
-/*import mover from '../../public/js/funcion.js';
+import './Panel.css';
 
-function Panel(props) {
-  return (
-  
-        <div onmouseenter={mover()}>
-            <img src={props.src} alt={props.alt}/>
-            <h2>{props.title}</h2>
-            <p>{props.description}</p>
-            <button className={props.claseBoton}>{props.botonTxt}</button>
-        </div>);
-}
-
-export default Panel;*/
 
 function Panel(props) {
   return (

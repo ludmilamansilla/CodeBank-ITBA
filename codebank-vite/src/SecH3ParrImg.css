@@ -1,33 +1,60 @@
-
-
-.SecH3ParrImg{
+.SecH3ParrImg {
     background-color: #071952;
     display: flex;
     color: white;
-    padding-left: 10px;
+    padding-left: 0.625em; /* 10px to em */
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap; /* Allow wrapping for smaller screens */
 }
 
-
-.SecH3ParrImg img{
-    width: 100%;
+.SecH3ParrImg img {
+    width: 50%;
+    max-width: 37.5em; /* 600px to em */
 }
 
-.SecH3ParrImg div{
+.SecH3ParrImg div {
+    width: 50%;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0.625em; /* 10px to em */
 }
 
 .SecH3ParrImg div button {
     background-color: #1973B8;
     color: white;
     border: none;
-    
+    padding: 0.625em 1.25em; /* 10px 20px to em */
+    margin-top: 0.625em; /* 10px to em */
 }
+
 .SecH3ParrImg div button:hover {
     background-color: #1464A5;
+}
+
+/* Media Queries for responsiveness */
+@media (max-width: 48em) { /* 768px to em */
+    .SecH3ParrImg {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        padding-left: 0; /* Remove left padding */
+    }
+
+    .SecH3ParrImg img {
+        width: 100%;
+    }
+
+    .SecH3ParrImg div {
+        width: 100%;
+        padding: 1.25em; /* 20px to em */
+    }
+}
+
+@media (max-width: 30em) { /* 480px to em */
+    .SecH3ParrImg div button {
+        width: 100%; /* Make buttons full width */
+        padding: 0.9375em; /* 15px to em */
+    }
 }
