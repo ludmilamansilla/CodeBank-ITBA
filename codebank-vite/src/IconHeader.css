@@ -1,0 +1,58 @@
+/*==========================
+Sidebar navigation
+========================*/
+.navbar {
+  position: relative;
+}
+.menu.icon {
+  cursor: pointer;
+  background: #050241;
+  border: none;
+  font-size: 1.25em; /* 20px to 1.25em */
+}
+.navbar .toggle {
+  position: fixed;
+  left: 1.875em; /* 30px to 1.875em */
+  top: 2.5em; /* 40px to 2.5em */
+  cursor: pointer;
+  background: transparent;
+  border: none;
+}
+
+.menu-nav {
+  list-style: none;
+  position: absolute;
+  background: #050241;
+  width: 0;
+  overflow: hidden;
+  z-index: 9;
+}
+
+.menu-nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-nav a:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.menu-nav.show-menu {
+  width: 300%;
+  transform: translateX(-4.3125em) translateY(7.5em);
+  display: block;
+}
+
+.menu-item {
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.menu-item:hover {
+  background-color: #1a1a1a;
+}
+
+.icono {
+  background-color: transparent;
+}

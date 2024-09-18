@@ -1,26 +1,41 @@
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.pagina {
+    display: flex;
+    flex: 1;
+}
+
 .sidebar {
-    width: 250px;
+    width: 15.625em; /* 250px */
     background-color: #f1f1f1;
-    padding: 20px;
+    padding: 1.25em; /* 20px */
     height: 100%;
     position: fixed;
     top: 0;
+    left: 0; /* Ensure sidebar is on the left */
+    display: flex;
+    flex-direction: column;
 }
 
 .sidebar ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    flex: 1;
 }
 
 .sidebar li {
-    margin-bottom: 10px;
-    padding: 10px;
-    border-bottom: #333 1px solid;
+    margin-bottom: 0.625em; /* 10px */
+    padding: 0.625em; /* 10px */
+    border-bottom: #333 0.0625em solid; /* 1px */
 }
 
 .sidebar li:hover {
-    margin-bottom: 10px;
     background-color: #ddd;
 }
 
@@ -34,7 +49,7 @@
 }
 
 .sidebar img {
-    width: 25%;
+    width: 4em; /* 25% of 100px */
 }
 
 .sidebar span {
@@ -45,37 +60,29 @@
 }
 
 .sidebar nav {
-    margin-top: 20px;
+    margin-top: 1.25em; /* 20px */
 }
 
-.pagina {
-    display: flex;
-}
-
-.converter-container {
-    position: relative;
-    padding: 20px;
-    margin-left: 200px;
-    width: 500px;
-}
-
-.main {
-    margin-left: 300px;
-    padding: 20px;
+.contenido {
+    flex: 1;
+    padding: 1.25em; /* 20px */
+    margin-left: 15.625em; /* 250px */
+    height: 100%;
+    overflow-y: auto;
 }
 
 /* Media queries for responsiveness */
 
-@media (max-width: 768px) {
+@media (max-width: 48em) { /* 768px */
     .sidebar {
         width: 100%;
         position: static;
-        padding: 10px;
-        margin-bottom: 20px;
+        padding: 0.625em; /* 10px */
+        margin-bottom: 1.25em; /* 20px */
     }
 
     .sidebar img {
-        width: 50%;
+        width: 3.125em; /* 50% of 100px */
     }
 
     .sidebar span {
@@ -84,14 +91,40 @@
 
     .pagina {
         flex-direction: column;
+        margin-left: 0; /* Reset margin for smaller screens */
     }
 
-    .converter-container {
+    .contenido {
         margin-left: 0;
         width: 100%;
     }
+}
 
-    .main {
-        margin-left: 0;
+@media (max-width: 30em) { /* 480px */
+    .sidebar {
+        padding: 0.3125em; /* 5px */
+    }
+
+    .sidebar img {
+        width: 2.5em; /* 40% of 100px */
+    }
+
+    .sidebar span {
+        font-size: 1.25em;
+    }
+
+    .sidebar li {
+        padding: 0.3125em; /* 5px */
+    }
+
+    .contenido {
+        padding: 0.625em; /* 10px */
+    }
+    .contenido h1{
+        font-size: xx-large;
+    }
+
+    .contenido p{
+        font-size: large;
     }
 }

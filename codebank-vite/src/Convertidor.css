@@ -1,27 +1,27 @@
 .converter-container {
-  margin: 50px auto;
-  padding: 20px;
+  margin: 3.125em auto;
+  padding: 1.25em;
   text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+  border: 0.0625em solid #ddd;
+  border-radius: 0.625em;
   background-color: #ffffff;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0em 0.25em 0.5em rgba(0, 0, 0, 0.1);
   left: 50%;
 }
 
 .form-group {
-  margin: 15px 0;
+  margin: 0.9375em 0;
 }
 
 .boton {
   background-color: #11034e;
   color: rgb(255, 255, 255);
-  padding: 12px 20px;
+  padding: 0.75em 1.25em;
   border: none;
-  border-radius: 5px;
+  border-radius: 0.3125em;
   cursor: pointer;
   font-size: 1rem;
-  margin: 10px 0;
+  margin: 0.625em 0;
   transition: ease-in-out 0.5s;
 }
 
@@ -30,23 +30,23 @@
 }
 
 .titulo {
-  margin-top: 20px;
+  margin-top: 1.25em;
   font-size: 1.2rem;
   color: #fffbfb;
   color: rgb(16, 6, 71);
 }
 
 .menu {
-  padding: 10px;
+  padding: 0.625em;
   width: 100%;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  border: 0.0625em solid #ccc;
+  border-radius: 0.3125em;
   font-size: 1rem;
   appearance: none;
   background: #11034e;
 }
 
-.menu :last-child{
+.menu :last-child {
   margin: 1em;
 }
 
@@ -59,15 +59,15 @@
   color: black;
   font-size: 1rem;
   font-weight: bold;
-  margin: 10px 0;
+  margin: 0.625em 0;
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 48em) {
   .converter-container {
-    margin: 20px auto;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 1.25em auto;
+    padding: 0.625em;
+    border-radius: 0.3125em;
   }
 
   .titulo {
@@ -75,16 +75,16 @@
   }
 
   .boton {
-    padding: 8px 16px;
+    padding: 0.5em 1em;
     font-size: 0.8rem;
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 30em) {
   .converter-container {
-    margin: 10px auto;
-    padding: 5px;
-    border-radius: 3px;
+    margin: 0.625em auto;
+    padding: 0.3125em;
+    border-radius: 0.1875em;
   }
 
   .titulo {
@@ -92,11 +92,7 @@
   }
 
   .boton {
-    padding: 6px 12px;
+    padding: 0.375em 0.75em;
     font-size: 0.7rem;
   }
-
-
-  
 }
-

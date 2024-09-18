@@ -5,13 +5,11 @@ function BarraNav({ items, accion }) {
     <nav>
       <ul>
         {items.map((item, index) => (
-          <li key={index}>
-            {item.isButton ? (
-              <button onClick={accion}>{item.txt}</button> 
+            item.isButton ? (<li key={index}>
+              <button onClick={accion}>{item.txt}</button> </li>
             ) : (
-              <Link to={item.lnk}>{item.txt}</Link> 
-            )}
-          </li>
+              <Link to={item.lnk}><li key={index}>{item.txt}</li></Link> 
+            )
         ))}
       </ul>
     </nav>

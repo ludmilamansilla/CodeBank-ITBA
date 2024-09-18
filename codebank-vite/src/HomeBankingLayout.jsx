@@ -10,13 +10,17 @@ function HomeBankingLayout(props) {
     
     <div className='pagina'>
 
-    <div className='sidebar'>
-    <Logo/>
-    <hr />
-    <BarraNav items={props.items}/>
-    </div>
+        <div className='sidebar'>
+            <Logo/>
+            <hr />
+            <BarraNav items={props.items}/>
+        </div>
 
-    <Outlet className="contenido"/>
+        <div className='contenido'>
+            <Outlet />
+        </div>
+
+    
     </div>);
 }
 

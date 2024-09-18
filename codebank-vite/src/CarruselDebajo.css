@@ -1,28 +1,26 @@
-
-
-img{
-    width: 30px;
+img {
+    width: 1.875em; /* 30px */
 }
 
-section{
+section {
     display: flex;
     flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 40px;
+    gap: 2.5em; /* 40px */
     overflow: hidden;
-    margin-top: 30px;
-    margin-left: 10px;
+    margin-top: 1.875em; /* 30px */
+    margin-left: 0.625em; /* 10px */
 }
 
-section div{
+section div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-section div p{
+section div p {
     color: #237ABA;
     cursor: pointer;
 }

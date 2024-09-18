@@ -23,10 +23,10 @@ function Header({items}) {
       <BarraNav
         items={items} accion={handleOpenPopup}
       />
-      <div>
+      <div className='iconos'>
         <IconHeader iClass={"fa-solid fa-magnifying-glass"} />
         <IconHeader iClass={"fa-solid fa-user"} />
-        <IconHeader iClass={"fa-solid fa-bars"} />
+        <IconHeader icon={"menu.icon"} iClass={"fa-solid fa-bars"} />
       </div>
 
       {showPopup && (
